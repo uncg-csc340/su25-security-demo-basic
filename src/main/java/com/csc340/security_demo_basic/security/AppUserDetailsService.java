@@ -23,22 +23,6 @@ public class AppUserDetailsService implements UserDetailsService {
   }
 
   public UserDetailsService userDetailsService() {
-    // InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-    // manager.createUser(
-    // User.withUsername("anakin")
-    // .password(this.passwordEncoder.encode("no-sand"))
-    // .roles("PADAWAN").build());
-
-    // manager.createUser(
-    // User.withUsername("obiwan")
-    // .password(this.passwordEncoder.encode("hello-there"))
-    // .roles("KNIGHT").build());
-
-    // manager.createUser(
-    // User.withUsername("quigon")
-    // .password(this.passwordEncoder.encode("bigger-fish"))
-    // .roles("MASTER").build());
-
     UserDetails user = User.builder()
         .username("anakin")
         .password(passwordEncoder().encode("no-sand"))
