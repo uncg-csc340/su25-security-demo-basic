@@ -7,7 +7,7 @@ Spring Security - Basic demo project
      - The rest of the dependencies should already look familiar: Spring Web, FreeMarker.
 - Once the security dependency is included, Security must be configured. The following are the elements needed for that:
      -   A User service class [AppUserDetailsService](https://github.com/uncg-csc340/su25-security-demo-basic/blob/77d61af329538b927af99631337a0ba17aa497b4/src/main/java/com/csc340/security_demo_basic/security/AppUserDetailsService.java#L14)
-         - It implements UserDetailsService. This will make it possible to authenticate our users using their usernames and passwords. For this demo, we have [hardcoded]() users.
+         - It implements UserDetailsService. This will make it possible to authenticate our users using their usernames and passwords. For this demo, we have [hardcoded](https://github.com/uncg-csc340/su25-security-demo-basic/blob/0f9c8cbbf54aa46bf01d1b82f398a5067d08624e/src/main/java/com/csc340/security_demo_basic/security/AppUserDetailsService.java#L25) users.
          - Each User has username, password, and a set of roles.
   -  A Security configuration class - [Security Config](https://github.com/uncg-csc340/su25-security-demo-basic/blob/77d61af329538b927af99631337a0ba17aa497b4/src/main/java/com/csc340/security_demo_basic/security/SecurityConfig.java#L14)
       -   Annotated with `@Configuration` and `@EnableWebSecurity`
